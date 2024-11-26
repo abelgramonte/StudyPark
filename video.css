@@ -1,0 +1,230 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('logo.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold,
+}
+
+/* Container for the page content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-grow: 1; /* This ensures the container grows and takes up remaining space */
+}
+
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column; /* Stack videos on small screens */
+        align-items: center; /* Center videos */
+    }
+
+    video {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width to avoid overflow */
+        margin: 10px 0; /* Add some margin between videos */
+    }
+}
+
+/* Controls section styling */
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.controls button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startCall {
+    background-color: #3f51b5;
+    color: white;
+}
+
+#startCall:hover {
+    background-color: #303f9f;
+}
+
+#endCall {
+    background-color: #dc3545;
+    color: white;
+}
+
+#endCall:hover {
+    background-color: #c82333;
+}
+
+/* Header and text styling */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    video {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #3f51b5;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #3f51b5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3f51b5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}
+
+/* Dropdown Menu for Mobile */
+.dropdown-button {
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-button {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: #3f51b5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    .dropdown-button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        padding: 0;
+        background-color: #3f51b5;
+    }
+
+    nav .dropdown.open ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 0;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Form button styling to match other buttons */
+form button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+

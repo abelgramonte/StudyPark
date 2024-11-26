@@ -1,0 +1,60 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/27011553/pexels-photo-27011553/free-photo-of-handmade-cover-of-book.jpeg?auto=compress&cs=tinysrgb&w=1400');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+}
+.container {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
